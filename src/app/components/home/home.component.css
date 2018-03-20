@@ -1,0 +1,22 @@
+.container-fluid{
+    padding-left:0px;
+    padding-right:0px;
+}
+.jumbotron {
+    text-align:center;
+    background-color: lightsteelblue;
+}
+
+.new{
+    margin-top:50px;
+    height:200px;
+    text-align:center;
+    background:lightsteelblue;
+}
+#form{
+    border-right:1px solid lightsteelblue;
+    border-left:1px solid lightsteelblue;
+}
+.new p{
+    padding-top:75px;
+}

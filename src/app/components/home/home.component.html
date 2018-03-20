@@ -1,0 +1,52 @@
+<!--header section -->
+  <div class="container-fluid">
+      <div class="jumbotron">
+          <h1>Quotes</h1>
+          <h3>Say something wise</h3>
+      </div>
+  </div>
+   <!-- main section -->
+   <div class="container">
+       
+  <div class="row"> 
+      <!-- form component -->
+      <div class="col-md-3" id="form">
+          <app-form (sendQuote)='submitForm($event)'></app-form>
+      </div>
+      <div class="col-md-9" >
+         
+              <div class="row">
+                  <div class="col-md-3"> 
+                      <div *ngFor="let quote of quotes">
+                       <h2>{{quote.votes}}</h2>
+                       </div>
+                    </div>
+                  <div class="col-md-9"> 
+                      <div *ngFor="let quote of quotes">
+                      <h5>Author: {{quote.author}}</h5>   
+                    <p>{{quote.text}}</p>
+                    <p>posted by:{{quote.name}}<span>   <!--at:{{quote.date}} --></span></p>
+                    <!-- votting buttons -->
+                   <button (click)="voteUp()" >upvote</button>
+                   <button (click)="voteDown()">DownVote</button>
+                    <button>Delete</button>
+                </div>
+                  </div>
+                    
+              </div>
+          
+        
+      </div>
+  </div>
+
+   </div>
+ 
+
+
+<!--footer section -->
+  <div class="container-fluid">
+      <div class="new">
+         <p>&copy; Quotes.inc 2018</p> 
+      </div>
+  </div>
+  

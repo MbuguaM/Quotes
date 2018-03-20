@@ -1,0 +1,20 @@
+<h5>Add a quote:</h5>
+
+<div class="formSection">
+  
+    
+<form (ngSubmit)='formSubmit()'>
+  <div>
+    <label>Quote:</label>  <br>
+    <input type="text" name='quote' [(ngModel)]='newQuote.text' ><br> 
+    <label>Author:</label> <br>
+    <input type="text" name='author' [(ngModel)]='newQuote.author'> <br>
+
+    <label>Name:</label><br>
+    <input type="text" name="name" [(ngModel)]='newQuote.name'> <br>
+  
+    {{newQuote.author}}
+   <button type="submit">Submit</button>
+  </div>
+</form>
+</div>
